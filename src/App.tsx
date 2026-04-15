@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect, FormEvent } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Instagram, ChevronRight, Star, Globe , TikTok} from 'lucide-react';
+import { X, ChevronRight, Star, Globe , Music2 , Instagram } from 'lucide-react';
 import { PRODUCTS } from './constants';
 import { Product } from './types';
 import { TRANSLATIONS, Language } from './translations';
