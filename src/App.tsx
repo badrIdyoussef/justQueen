@@ -71,7 +71,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FDFDFD] text-[#1A1A1A] font-sans selection:bg-pink-500 selection:text-white" dir={t.dir}>
+    <div className="min-h-screen bg-white text-[#1A1A1A] font-sans selection:bg-pink-500 selection:text-white" dir={t.dir}>
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 h-28 md:h-40 flex items-center justify-center relative py-2">
