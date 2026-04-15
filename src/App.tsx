@@ -74,7 +74,7 @@ export default function App() {
     <div className="min-h-screen bg-[#FDFDFD] text-[#1A1A1A] font-sans selection:bg-pink-500 selection:text-white" dir={t.dir}>
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-md border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-6 h-28 md:h-40 flex items-center justify-center relative py-2">
+        <div className="max-w-7xl mx-auto px-6 flex items-center justify-center relative py-2">
           <div className="flex items-center gap-12 absolute left-6">
             {/* Logo removed as per request */}
           </div>
