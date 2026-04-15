@@ -233,7 +233,7 @@ export default function App() {
               <img 
                 src="/Soukaina-4-removebg-preview.jpg" 
                 alt="JustQueen Logo" 
-                className="h-48 w-auto object-contain"
+                className="h-28 w-auto object-contain"
                 referrerPolicy="no-referrer"
               />
             </a>
