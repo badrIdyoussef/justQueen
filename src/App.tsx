@@ -80,7 +80,7 @@ export default function App() {
           </div>
           <div className="flex items-center justify-center h-full">
             <img 
-              src="/Soukaina-4-removebg-preview.png" 
+              src="/Soukaina-4-removebg-preview.jpg" 
               alt="JustQueen Logo" 
               className="h-full w-auto object-contain hover:opacity-80 transition-opacity cursor-pointer"
               referrerPolicy="no-referrer"
@@ -231,7 +231,7 @@ export default function App() {
           <div className={`col-span-1 ${t.dir === 'rtl' ? 'text-right' : 'text-left'}`}>
             <a href="#" className="mb-6 block">
               <img 
-                src="/Soukaina-4-removebg-preview.png" 
+                src="/Soukaina-4-removebg-preview.jpg" 
                 alt="JustQueen Logo" 
                 className="h-48 w-auto object-contain"
                 referrerPolicy="no-referrer"
