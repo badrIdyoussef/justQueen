@@ -36,23 +36,27 @@ export default function App() {
     setSubmitError(null);
     
     try {
-      const response = await fetch('/api/order', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
+      // FormSubmit.co expects a standard form POST or JSON
+      const response = await fetch("https://formsubmit.co/ajax/Justqueen.store@gmail.com", {
+        method: "POST",
+        headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
         },
         body: JSON.stringify({
           ...formData,
-          product: PRODUCTS[0].name,
-          size: currentSize,
-          color: currentColor,
-          price: PRODUCTS[0].price
+          Product_Name: PRODUCTS[0].name,
+          Selected_Size: currentSize,
+          Selected_Color: currentColor,
+          Total_Price: `${PRODUCTS[0].price} MAD`,
+          _subject: `New Order: ${PRODUCTS[0].name} - ${formData.name}`, // Email subject line
+          _template: 'table' // FormSubmit will format the email as a clean table
         }),
       });
 
       const result = await response.json();
 
-      if (result.success) {
+      if (response.ok) {
         setIsOrderSuccess(true);
         setTimeout(() => {
           setIsOrderSuccess(false);
@@ -60,11 +64,11 @@ export default function App() {
           setFormData({ name: '', phone: '', address: '', city: '' });
         }, 3000);
       } else {
-        setSubmitError(result.error || (language === 'ar' ? 'حدث خطأ أثناء إرسال الطلب. يرجى المحاولة مرة أخرى.' : 'An error occurred while sending the order. Please try again.'));
+        setSubmitError(language === 'ar' ? 'حدث خطأ. يرجى المحاولة مرة أخرى.' : 'An error occurred. Please try again.');
       }
     } catch (error) {
       console.error('Checkout Error:', error);
-      setSubmitError(language === 'ar' ? 'حدث خطأ في الاتصال بالخادم.' : 'Error connecting to server.');
+      setSubmitError(language === 'ar' ? 'حدث خطأ في الاتصال.' : 'Error connecting to server.');
     } finally {
       setIsSubmitting(false);
     }
