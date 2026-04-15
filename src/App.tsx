@@ -245,7 +245,7 @@ export default function App() {
               {t.footer.description}
             </p>
           </div>
-          <div className={t.dir === 'rtl' ? 'text-right' : 'text-left'}>
+          <div className="text-left">
             <h4 className="font-bold text-sm uppercase tracking-widest mb-6">
               {t.footer.connect}
             </h4>
