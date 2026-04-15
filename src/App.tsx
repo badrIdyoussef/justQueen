@@ -246,14 +246,34 @@ export default function App() {
             </p>
           </div>
           <div className={t.dir === 'rtl' ? 'text-right' : 'text-left'}>
-            <h4 className="font-bold text-sm uppercase tracking-widest mb-6">{t.footer.connect}</h4>
+            <h4 className="font-bold text-sm uppercase tracking-widest mb-6">
+              {t.footer.connect}
+            </h4>
             <ul className="space-y-4 text-sm text-gray-500">
-              <li><a href="#" className="hover:text-pink-500 transition-colors">Instagram</a></li>
-              <li><a href="#" className="hover:text-pink-500 transition-colors">Twitter</a></li>
-              <li><a href="#" className="hover:text-pink-500 transition-colors">Pinterest</a></li>
-              <li><a href="#" className="hover:text-pink-500 transition-colors">TikTok</a></li>
+              <li>
+                <a 
+                  href="https://www.instagram.com/just_queenstore?igsh=NWs0MG9lODZ1Z3c5&utm_source=qr" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={`flex items-center gap-3 hover:text-pink-500 transition-colors ${t.dir === 'rtl' ? 'flex-row-reverse' : ''}`}
+                >
+                  <Instagram className="w-5 h-5" />
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://www.tiktok.com/@justqueenstore?_r=1&_t=ZS-95YoSXttzEa" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={`flex items-center gap-3 hover:text-pink-500 transition-colors ${t.dir === 'rtl' ? 'flex-row-reverse' : ''}`}
+                >
+                  <Music2 className="w-5 h-5" />
+                  <span>TikTok</span>
+                </a>
+              </li>
             </ul>
-          </div>
+          </div>        
         </div>
   {/*
         <div className={`max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-gray-50 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400 ${t.dir === 'rtl' ? 'md:flex-row-reverse' : ''}`}>

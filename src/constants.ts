@@ -16,7 +16,7 @@ export const PRODUCTS: Product[] = [
         image: '/IMG_5584.jpg' 
       },
       { 
-        name: 'أخضر حكيم', 
+        name: 'أخضر زيتوني', 
         hex: '#9CAF88', 
         image: '/IMG_5590.jpg' 
       },
