@@ -37,7 +37,7 @@ export default function App() {
     
     try {
       // FormSubmit.co expects a standard form POST or JSON
-      const response = await fetch("https://formsubmit.co/ajax/Justqueen.store@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/46311283f96a8dcc27a516e077da8e14", {
         method: "POST",
         headers: { 
             'Content-Type': 'application/json',
